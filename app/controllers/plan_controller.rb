@@ -11,7 +11,7 @@ class PlanController < ApplicationController
       flash[:success] = t ".create_successfully"
       redirect_to :new_plan
     else
-      flash.now[:danger] = t ".error"
+      # flash.now[:danger] = t ".error"
       render :new
     end
   end

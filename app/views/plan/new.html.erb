@@ -1,32 +1,25 @@
 <% provide :title, t(".create_plan") %>
-
 <h1><%= t ".create_plan" %></h1>
 <div class="row">
   <div class="col-md-6 col-md-offset-3">
-  <%= form_for @plan, url: plan_index_path do |f| %>
-
-    <%= f.label :moneys, t(".moneys") %>
-    <%= f.text_field :moneys, class: "form-control" %>
-
-    <%= f.label :month, t(".month") %>
-    <%= f.select :month, 1..12, {}, class: "form-control" %>
-
-    <%= f.label :category, t(".category") %>
-    <%= f.collection_select :category_id,  @categories.all, :id, :name, {}, class: "form-control" %>
-
-    <%= f.label :spending_category, t(".income_expenses") %>
-    <%= f.select :spending_category,
+    <%= form_for @plan, url: plan_index_path do |f| %>
+      <%= render "shared/error2_messages" %>
+      <%= f.label :moneys, t(".moneys") %>
+      <%= f.text_field :moneys, class: "form-control" %>
+      <%= f.label :month, t(".month") %>
+      <%= f.select :month, 1..12, {}, class: "form-control" %>
+      <%= f.label :category, t(".category") %>
+      <%= f.collection_select :category_id,  @categories.all, :id, :name, {}, class: "form-control" %>
+      <%= f.label :spending_category, t(".income_expenses") %>
+      <%= f.select :spending_category,
       Plan.spending_category_option, {}, class: "form-control" %>
-
-    <%= f.label :type_money, t(".fixed_incurred") %>
-    <%= f.select :type_money,
+      <%= f.label :type_money, t(".fixed_incurred") %>
+      <%= f.select :type_money,
       Plan.type_option, {}, class: "form-control" %>
-
-    <%= f.label :status, t(".status") %>
-    <%= f.select :status,
+      <%= f.label :status, t(".status") %>
+      <%= f.select :status,
       Plan.status_option, {}, class: "form-control" %>
-
-    <%= f.submit t(".create_new_plan"),  class: "btn btn-primary" %>
-  <% end %>
+      <%= f.submit t(".create_new_plan"),  class: "btn btn-primary" %>
+    <% end %>
   </div>
 </div>

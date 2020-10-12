@@ -4,7 +4,11 @@ vi:
       base_title: "Quản lý chi tiêu"
     header:
       account: "Tài khoản"
+      settings: "Cài đặt"
+      signout: "Đăng xuất"
       plan: "Kế hoạch"
+      newplan: "Tạo kế hoạch"
+      viewplan: "Xem kế hoạch"
       home: "Trang chủ"
       login: "Đăng nhập"
       language: "Ngôn ngữ"

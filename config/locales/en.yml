@@ -4,13 +4,17 @@ en:
       base_title: "Cash Flow Management"
     header:
       account: "Account"
+      settings: "Settings"
+      signout: "Sign out"
       plan: "Plan"
+      newplan: "Create plan"
+      viewplan: "View plan"
       home: "Home"
       login: "Log in"
       language: "Language"
       cash_flow_management: "Cash Flow Management"
-      category: "category"
-      chart: "chart"
+      category: "Category"
+      chart: "Chart"
   static_pages:
     home:
       home: "Home"
