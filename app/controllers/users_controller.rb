@@ -14,7 +14,7 @@ class UsersController < ApplicationController
       @user.send_activation_email
       UserMailer.account_activation(@user).deliver_now
       flash[:info] = t "form.create"
-      redirect_to root_url
+      redirect_to login_url
     else
       render :new
     end

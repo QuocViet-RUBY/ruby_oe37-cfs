@@ -1,5 +1,4 @@
 class CategoriesController < ApplicationController
-  before_action :check_logged, only: %i(index create destroy)
   before_action :find_category_id, only: :destroy
   before_action :load_categories_of_user, only: %i(index create)
 
@@ -43,12 +42,5 @@ class CategoriesController < ApplicationController
 
     flash[:warning] = t "category.error"
     redirect_to root_path
-  end
-
-  def check_logged
-    return if logged_in?
-
-    flash[:danger] = t "login.please_log_in"
-    redirect_to login_url
   end
 end

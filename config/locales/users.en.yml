@@ -47,7 +47,7 @@ en:
     activated: "Status"
     activated_at: "Date created"
     list_user: "List User"
-    not_user: "Not User"
+    not_user: "Email does not exist"
     no_person: "There's no person to be displayed"
     user_deleted: "successfully deleted the user"
     account_lockout: "the account is locked due to %{reason}"

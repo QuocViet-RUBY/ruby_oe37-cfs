@@ -46,7 +46,7 @@ vi:
     activated: "Trạng thái"
     activated_at: "Ngày tạo"
     list_user: Danh Sách Người Dùng
-    not_user: "Không tồn có người dùng"
+    not_user: "Email không tồn tại"
     no_person: "Không có người nào được hiển thị"
     user_deleted: "xóa người dùng thành công"
     account_lockout: "tài khoản bị khóa do %{reason}"

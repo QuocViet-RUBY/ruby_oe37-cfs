@@ -1,3 +1,8 @@
+<p>
+  <%= t("manger_user.download")%>
+  <%= link_to "CSV", admin_users_path(format: "csv") %> |
+  <%= link_to "Excel", admin_users_path(format: "xls") %>
+</p>
 <br/>
 <h1><%= t("manger_user.list_user") %></h1>
 <div class="col-md-10 col-lg-offset-1">

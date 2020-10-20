@@ -1,6 +1,7 @@
 class PasswordResetsController < ApplicationController
-  before_action :get_user, :valid_user, :check_expiration, only: %i(edit update)
-
+  before_action :check_logged, except: [:new, :create, :edit, :update]
+  before_action :get_user, :valid_user, only: [:edit, :update]
+  before_action :check_expiration, only: [:edit, :update]
   def new; end
 
   def create
@@ -9,7 +10,7 @@ class PasswordResetsController < ApplicationController
       @user.create_reset_digest
       @user.send_password_reset_email
       flash[:info] = t "account.create_infor"
-      redirect_to root_url
+      redirect_to login_url
     else
       flash.now[:danger] = t "account.create_danger"
       render :new

@@ -5,10 +5,10 @@ class AccountActivationsController < ApplicationController
       user.activate
       log_in user
       flash[:success] = t "account.active"
-      redirect_to user
+      redirect_to root_url
     else
       flash[:danger] = t "account.in_active"
-      redirect_to root_url
+      redirect_to login_url
     end
   end
 end
