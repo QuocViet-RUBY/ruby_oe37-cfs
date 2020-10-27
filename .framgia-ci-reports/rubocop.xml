@@ -1,0 +1,30 @@
+<?xml version='1.0'?>
+<checkstyle>
+  <file name='app/channels/application_cable/channel.rb'/>
+  <file name='app/channels/application_cable/connection.rb'/>
+  <file name='app/controllers/account_activations_controller.rb'/>
+  <file name='app/controllers/admin/users_controller.rb'/>
+  <file name='app/controllers/application_controller.rb'/>
+  <file name='app/controllers/categories_controller.rb'/>
+  <file name='app/controllers/chart_controller.rb'/>
+  <file name='app/controllers/password_resets_controller.rb'/>
+  <file name='app/controllers/plans_controller.rb'/>
+  <file name='app/controllers/sessions_controller.rb'/>
+  <file name='app/controllers/shares_controller.rb'/>
+  <file name='app/controllers/static_pages_controller.rb'/>
+  <file name='app/controllers/users_controller.rb'/>
+  <file name='app/helpers/application_helper.rb'/>
+  <file name='app/helpers/categories_helper.rb'/>
+  <file name='app/helpers/plans_helper.rb'/>
+  <file name='app/helpers/sessions_helper.rb'/>
+  <file name='app/helpers/shares_helper.rb'/>
+  <file name='app/jobs/application_job.rb'/>
+  <file name='app/mailers/application_mailer.rb'/>
+  <file name='app/mailers/plan_mailer.rb'/>
+  <file name='app/mailers/user_mailer.rb'/>
+  <file name='app/models/application_record.rb'/>
+  <file name='app/models/category.rb'/>
+  <file name='app/models/plan.rb'/>
+  <file name='app/models/share.rb'/>
+  <file name='app/models/user.rb'/>
+</checkstyle>
